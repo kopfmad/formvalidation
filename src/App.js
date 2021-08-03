@@ -80,19 +80,19 @@ if(qtyErrors>0){e.preventDefault()}
         <form>
           <div>
             {" "}
-            <input type="text" placeholder="Name" onChange={changeName} value={name}/>{" "}
+            <input type="text" placeholder="Name" onChange={changeName} value={name} required/>{" "}
           </div>
           <div>
-            <input type="email" placeholder="E-mail" />
+            <input type="email" placeholder="E-mail" required/>
           </div>
           <div>
-            <input type="number" placeholder="Phone" onChange={changePhone} value={phone}/>
+            <input type="number" placeholder="Phone" onChange={changePhone} value={phone} required/>
           </div>
           <div>
-            <input type="password" placeholder="Password" onChange={changePassword} value={password}/>
+            <input type="password" placeholder="Password" onChange={changePassword} value={password} required/>
           </div>
           <div>
-            <input type="password" placeholder="Confirm Password" onChange={changeCpassword} value={cpassword}/>
+            <input type="password" placeholder="Confirm Password" onChange={changeCpassword} value={cpassword} required/>
           </div>
           <button onClick={clicked}>Submit</button>
         </form>
